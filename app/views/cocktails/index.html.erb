@@ -1,5 +1,5 @@
 <div class="navbar-wagon">
-  <em>Cocktailand</em>
+  <em>Welcome, drinkers</em>
   <div class="navbar-wagon-right">
     <%= link_to "Add a new cocktail", new_cocktail_path %>
   </div>
@@ -7,14 +7,19 @@
 </div>
 
 <div class="main-page">
-<h1> All the things I drank once </h1>
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,108,200,12.6) 0%, rgba(8,36,61,0.6) 41%), url(<%= cl_image_path("mzqazlz1ggksvvjbotmg") %>)">
 
-<%= cl_image_tag("aaqxmiozfs1t0buvx09u",
-      width: 400, height: 300, crop: :fill) %>
+  <div class="banner-content">
+    <h1> Gal walks into this bar </h1>
+    <p> And drinks...</p>
+  </div>
+</div>
+
+
 <ul>
   <% @cocktails.each do |cocktail| %>
     <li class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<%= cl_image_path @article.photo, height: 198, width: 198, crop: :fill %>')">
+         url(<%= cl_image_path cocktail.photo, height: 198, width: 198, crop: :fill unless cocktail.photo.blank? %>)">
       <%= link_to cocktail.name, cocktail_path(cocktail)%>
     </li>
   <% end %>

@@ -1,7 +1,7 @@
 /* Main navbar */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: black;
+  background: #2f1521;
   transition: all 0.3s ease;
   height: 70px;
   padding: 0px 30px;
@@ -9,11 +9,16 @@
   align-items: center;
   justify-content: space-between;
   color: #E8EBE4;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
 }
 
 .navbar-wagon a {
   color: #E8EBE4;
   text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+
 }
 
 /* Logo */

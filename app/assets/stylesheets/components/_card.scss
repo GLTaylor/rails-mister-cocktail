@@ -1,7 +1,41 @@
 .card {
-  border: 2px solid #4A051C;
+  border: 5px solid #2f1521;
   width: 200px;
   height: 200px;
   display: inline-block;
   margin: 30px;
+}
+
+.card-form {
+    width: 400px;
+    box-shadow: 1px 1px 9px 1px #d4d4d4eb;
+    background-color: #fdfdfd;
+    padding: 71px 60px;
+    margin: auto;
+    margin-top: 130px;
+
+}
+
+.label-form {
+  display: inline-grid;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  font-family: Pacifico;
+}
+
+.card-big {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: auto;
+}
+.card-big h1, a {
+  text-decoration: none;
+  color: #2f1521;
+  font-family: Pacifico;
 }

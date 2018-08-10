@@ -1,14 +1,16 @@
 <div class="navbar-wagon">
-  <em>Cocktailand</em>
+  <em>Welcome, drinkers</em>
   <div class="navbar-wagon-right">
     <%= link_to "Back to the drinks!", cocktails_path %>
   </div>
 
 </div>
-<div class="card">
-<%= form_for (@cocktail) do |f| %>
+<div class="card-form">
+<%= simple_form_for (@cocktail) do |f| %>
+<div class="label-form">
 <%= f.label :name %>
 <%= f.text_field :name %>
+</div>
 <%= f.input :photo %>
 <%= f.input :photo_cache, as: :hidden %>
 <%= f.submit "Add this cocktail", class: "btn btn-primary" %>

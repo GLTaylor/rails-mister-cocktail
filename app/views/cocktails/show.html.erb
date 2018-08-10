@@ -1,23 +1,25 @@
 <div class="navbar-wagon">
-  <em>Cocktailand</em>
+  <em>Welcome, drinkers</em>
   <div class="navbar-wagon-right">
     <%= link_to "Back to the drinks!", cocktails_path %>
   </div>
 
 </div>
 
-<div class="main-page">
+<div class="card-big">
 <h1> <%= @cocktail.name %> </h1>
 <p> Below you can find the doses for this cocktail. </p>
 
-<ul>
+
 <% @cocktail.doses.each do |dose| %>
-<li>
-<%= dose.description %> of <%= dose.ingredient.name %>
-<%= link_to "Delete this dose", cocktail_dose_path(dose), method: :delete %>
-<% end %>
-</li>
-</ul>
+
+  <div style="line-height: 42px">
+    <%= dose.description %> of <%= dose.ingredient.name %> <br>
+    <%= link_to "Delete this dose", cocktail_dose_path(dose), method: :delete %>
+    <% end %>
+  </div>
+
+
 <p>
   <%= link_to "Add a dose to this one", new_cocktail_dose_path(@cocktail)  %>
 </p>
