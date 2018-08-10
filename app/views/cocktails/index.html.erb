@@ -1,0 +1,19 @@
+<div class="navbar-wagon">
+  <em>Cocktailand</em>
+  <div class="navbar-wagon-right">
+    <%= link_to "Add a new cocktail", new_cocktail_path %>
+  </div>
+
+</div>
+
+<div class="main-page">
+<h1> All the things I drank once </h1>
+<ul>
+  <% @cocktails.each do |cocktail| %>
+    <li class="card" background: url('https://cdn.liquor.com/wp-content/uploads/2017/09/01105541/classic-bloody-mary-720x720-recipe.jpg') >
+      <%= link_to cocktail.name, cocktail_path(cocktail)%>
+    </li>
+  <% end %>
+</ul>
+</div>
+

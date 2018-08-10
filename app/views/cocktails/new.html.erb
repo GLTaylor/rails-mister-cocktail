@@ -1,0 +1,14 @@
+<div class="navbar-wagon">
+  <em>Cocktailand</em>
+  <div class="navbar-wagon-right">
+    <%= link_to "Back to the drinks!", cocktails_path %>
+  </div>
+
+</div>
+<div class="card">
+<%= form_for (@cocktail) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.submit "Add this cocktail", class: "btn btn-primary" %>
+<% end %>
+</div>
