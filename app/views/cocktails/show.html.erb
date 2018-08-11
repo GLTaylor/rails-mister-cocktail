@@ -6,17 +6,17 @@
 
 </div>
 
-<div class="card-big">
+<div class="card-big" >
 <h1> <%= @cocktail.name %> </h1>
 <p> Below you can find the doses for this cocktail. </p>
-
+<%= cl_image_tag @cocktail.photo %>
 
 <% @cocktail.doses.each do |dose| %>
 
   <div style="line-height: 42px">
     <%= dose.description %> of <%= dose.ingredient.name %> <br>
     <%= link_to "Delete this dose", cocktail_dose_path(dose), method: :delete %>
-    <% end %>
+    <% end %> <br>
     <%= link_to "Add a dose to this one", new_cocktail_dose_path(@cocktail)  %>
 
   </div>
