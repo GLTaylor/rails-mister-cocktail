@@ -9,7 +9,8 @@
 <div class="card-big" >
 <h1> <%= @cocktail.name %> </h1>
 <p> Below you can find the doses for this cocktail. </p>
-<%= cl_image_tag @cocktail.photo %>
+
+<%= cl_image_tag @cocktail.photo, height: 198, width: 198, crop: :fill %>
 
 <% @cocktail.doses.each do |dose| %>
 
