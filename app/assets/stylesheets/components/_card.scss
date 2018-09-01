@@ -1,5 +1,6 @@
 .card {
-  border: 5px solid #2f1521;
+  font-family: "STARWARS";
+  border: 5px solid black;
   width: 200px;
   height: 200px;
   display: inline-block;
@@ -13,7 +14,7 @@
     padding: 71px 60px;
     margin: auto;
     margin-top: 130px;
-
+    font-family: "STARWARS";
 }
 
 .label-form {
@@ -23,7 +24,7 @@
 .card a {
   text-decoration: none;
   color: white;
-  font-family: Pacifico;
+  font-family: "STARWARS";
 }
 
 .card-big {
