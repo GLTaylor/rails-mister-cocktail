@@ -21,10 +21,14 @@
   display: inline-grid;
 }
 
-.card a {
+.card a, li {
   text-decoration: none;
   color: white;
   font-family: "STARWARS";
+}
+
+li:hover {
+  opacity: 0.5;
 }
 
 .card-big {

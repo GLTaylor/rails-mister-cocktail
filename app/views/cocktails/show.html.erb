@@ -1,5 +1,5 @@
 <div class="navbar-wagon">
-  <em>Welcome, drinkers</em>
+  <em>Hello there! </em>
   <div class="navbar-wagon-right">
     <%= link_to "Back to the drinks!", cocktails_path %>
   </div>
@@ -7,7 +7,7 @@
 </div>
 
 <div class="card-big" >
-<h1> <%= @cocktail.name %> </h1>
+<h1 style= "font-family: 'STARWARS';"> <%= @cocktail.name %> </h1>
 <p> Below you can find the doses for this cocktail. </p>
 
 <%= cl_image_tag @cocktail.photo, height: 198, width: 198, crop: :fill %>
