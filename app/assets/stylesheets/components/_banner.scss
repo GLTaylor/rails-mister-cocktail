@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .banner h1 {
   font-family: "STARWARS";
   font-size: 50px;
@@ -22,4 +23,15 @@
   color: rgb(255, 255, 255);
   opacity: 0.6;
   margin-bottom: 30px;
+}
+.new-black-button {
+  background-color: black;
+  font-family: 'STARWARS';
+  padding: 10px;
+  border-radius: 50%;
+  width: 200px;
+  margin: auto;
+}
+.new-black-button a {
+  color: white;
 }
